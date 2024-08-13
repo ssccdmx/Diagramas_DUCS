@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Page-Enter" content="blendTrans(duration=1)">
+	<meta http-equiv="Page-Exit" content="revealTrans(duration=0.5, transition=5)">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://kit.fontawesome.com/4a84d99523.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="../img/ico/UCS.png">
+	<title>Vialidad y Tránsito</title>
+	<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+</head>
+
+
+<body>
+	
+	<div id="demo" >
+
+    <!--loading-->
+		<div id="contenedor_carga">
+			<div id="carga"></div>
+		</div>
+	
+	
+		<script>
+			window.onload=function()
+			{
+				var contenedor=document.getElementById('contenedor_carga');
+				contenedor.style.visibility='hidden';
+				contenedor.style.opacity='.1';
+			}
+		</script>
+	<!--End Loading-->
+
+
+		<div style="margin:40px 25px 25px 40px;width:50%;box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;background: #fff opacity: 0.1;">
+			<vue-photo-zoom-pro
+				:width="width"
+				:height="height"
+				:url="url"
+				:type="type"
+				:scale="scale"
+				:out-zoomer="showType"
+				:zoomer-style="{
+					  'background-color': taobao ? 'transparent' : 'rgba(0,0,0,0.6)',
+					'filter': filter ?  'drop-shadow(16px 16px 20px red) invert(75%)' : ''
+					}">
+			  </vue-photo-zoom-pro>
+		</div>
+	
+
+		
+<!--Contenedor Botones-->
+		<div class="contenedor">
+		
+			<!--Botón Directorio-->
+			<script>
+				function cambia_de_pagina1_1(){
+					  setTimeout("location.href='Directorio.html';",50);
+					}
+			</script>
+			<button style="margin-top:5px; margin-bottom:5px" type="submit" onclick="javascript:cambia_de_pagina1_1();">
+					<i class="fa-solid fa-address-book"></i>
+			</button>
+			<br>
+			<!--End Botón Directorio-->
+
+			<!--Botón Anexo-->
+			<script>
+				function cambia_de_pagina1_2(){
+					  setTimeout("location.href='Anexos/Anexo33-37.html';",50);
+					}
+			</script>
+			<button style="margin-top:5px; margin-bottom:5px" type="submit" onclick="javascript:cambia_de_pagina1_2();">
+					<i class="fa-solid fa-file"></i>
+			</button>
+			<br>
+			<!--End Botón Anexo-->
+			
+			<!--Botón Home-->
+			<script>
+				function cambia_de_pagina1_3(){
+					  setTimeout("location.href='../index.html';",50);
+					}
+			</script>
+			<button style="margin-top:5px; margin-bottom:5px" type="submit" onclick="javascript:cambia_de_pagina1_3();">
+					<i class="fa-solid fa-home"></i>
+			</button>
+			<!--End Botón Home-->
+		</div>
+	<!--End Contenedor Botones-->
+	
+		<div style="width:45%;display:inline-block;vertical-align:top;"></div>
+
+
+	</div>
+
+	
+	<script src="../js/vue-photo-zoom-pro.js"></script>
+	<script src="../js/VialidadTransito.js"></script>
+
+</body>
+</html>

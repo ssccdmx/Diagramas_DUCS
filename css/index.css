@@ -1,0 +1,297 @@
+:root {
+	--primario: #691c32;
+	--primario2: #9F2241;
+	--secundario: #BC955C;
+	--secundario2: #DDC9A3;
+	--terciario: #10312b;
+	--terciario2: #235b4e;
+	--cuaternario: #6F7271;
+	--cuaternario2: #98989A;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEhJtY4t4oY4t0t89Smto89QtwHRkMGwdibQW52AREMuc29ITI_fYi_4AdMLibljrzUdetwj-cICo-9OVjcYKJzj34g0ag8WRNQqvlhW0S3waB5xSC60-UrscStX67csKTP3JsmqlQEMXGMsUMoUks-TQbPvoRHdkvZBTIKQxZIeB4D1BaEOdYfhHLH-tw=s16000');
+	font-family: 'Quicksand', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 900px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	background: #fff;
+	min-height: 60vh;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.columna-izquierda {
+	background-size: cover;
+	background-position-x: center;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 450px;
+	
+	-moz-user-select: none;
+	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+	pointer-events: none
+}
+
+
+.columna-derecha {
+
+	padding: 50px 30px 30px 60px;
+	width: auto;
+}
+  
+
+.contenedor-2 {
+	width: 90%;
+	max-width: 800px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	background: #fff;
+	min-height: 60vh;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	display: grid;
+}
+
+
+
+.header {
+	margin-bottom: 30px;
+	text-align: center;
+	
+
+}
+
+.header-1 {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+	background-color:var(--secundario);
+	font-size: 1em;
+	border-radius: 10px;
+	position: relative;
+	align-items: center;
+	padding: 10px;
+	
+}
+
+.header h1 {
+	color: var(--primario);
+}
+
+.header p {
+	color: var(--secundario);
+}
+
+label {
+	margin-bottom: 10px;
+	display: block;
+	font-weight: 500;
+	color: var(--secundario);
+	font-size: 14px;
+}
+
+.contenedor-input-fecha {
+	position: relative;
+	width: 40%;
+}
+
+.contenedor-input {
+	position: relative;
+	width: 65px;
+}
+
+.registro {
+	display: none;
+}
+
+.registro.activo {
+	display: block;
+}
+
+.exito {
+	display: none;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.exito.activo {
+	display: flex;
+}
+
+.exito svg {
+	width: 50px;
+	height: 50px;
+	color: var(--primario);
+}
+
+
+input {
+	height: 50px;
+	line-height: 40px;
+	font-size: 14px;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background: #f4f8f7;
+	color: var(--primario);
+	font-family: 'Quicksand', sans-serif;
+	border: 2px solid transparent;
+	transition: .3s ease all;
+	text-align: center;
+}
+
+
+input:focus {
+	outline: none;
+	border: 2px solid var(--primario);
+	
+}
+
+.contenedor-input svg {
+	position: absolute;
+	color: var(--primario);
+	padding: 1px;
+	top: 1px;
+	left: 1px;
+	text-align: right;
+} 
+
+.contenedor-formulario {
+	text-align: left;
+	position: relative;
+	white-space: nowrap;
+	align-items: center;
+	justify-content: center;
+	display:flex;
+} 
+
+
+
+.contenedor-boton {
+	display: flex;
+	justify-content: center;
+	
+}
+
+button {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 20px;
+	background: none;
+	height: 55px;
+	width: 95%;
+	color: var(--primario);
+	padding: 0 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--primario);
+	cursor: pointer;
+	transition: .3s ease all;
+	outline: none;
+}
+
+button:hover {
+	background: var(--primario);
+	color: #fff;
+}
+
+button svg {
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+}
+
+
+
+
+
+
+
+
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+  }
+
+  .slider ul {
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 30s infinite alternate linear;
+  }
+
+  .slider li {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+  }
+
+  .slider .img-slider {
+	width: 450px;
+	height: 500px;
+  }
+
+  @keyframes cambio {
+	0% {
+	  margin-left: 0;
+	}
+	20% {
+	  margin-left: 0;
+	}
+	25% {
+	  margin-left: -100%;
+	}
+	45% {
+	  margin-left: -100%;
+	}
+	50% {
+	  margin-left: -200%;
+	}
+	70% {
+	  margin-left: -200%;
+	}
+	75% {
+	  margin-left: -300%;
+	}
+	100% {
+	  margin-left: -300%;
+	}
+  }
+  
+  .img-logo{
+		border-radius: 10px;
+		overflow: hidden;
+		
+		min-height: 60vh;
+		display: grid;
+  }

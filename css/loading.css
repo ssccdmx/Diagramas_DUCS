@@ -1,0 +1,52 @@
+:root {
+	--primario: #691c32;
+	--primario2: #9F2241;
+	--secundario: #BC955C;
+	--secundario2: #DDC9A3;
+	--terciario: #10312b;
+	--terciario2: #235b4e;
+	--cuaternario: #6F7271;
+	--cuaternario2: #98989A;
+}
+
+*,*:after,*:before{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor_carga{
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEhJtY4t4oY4t0t89Smto89QtwHRkMGwdibQW52AREMuc29ITI_fYi_4AdMLibljrzUdetwj-cICo-9OVjcYKJzj34g0ag8WRNQqvlhW0S3waB5xSC60-UrscStX67csKTP3JsmqlQEMXGMsUMoUks-TQbPvoRHdkvZBTIKQxZIeB4D1BaEOdYfhHLH-tw=s16000');
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #eee;
+    border-top-color: var(--primario2);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Page-Enter" content="blendTrans(duration=1)">
+	<meta http-equiv="Page-Exit" content="revealTrans(duration=0.5, transition=5)">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="../css/directorio.css">
+	<script src="https://kit.fontawesome.com/4a84d99523.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="../img/ico/UCS.png">
+	<title>Directorio</title>
+	<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+	<script src="../js/table.js"></script>	
+	<script src="../js/datatable.js"></script>
+	
+	
+</head>
+
+
+<body>
+	
+	<div class="contenedor-title">
+		<div class="title">
+			<div class="col-md-12">
+				<h1>Directorio - Dirección de la Unidad de Contacto del Secretario</h1>
+			</div>
+		</div>
+
+			<!--Contenedor Botones-->
+			<div class="contenedor-buton">
+				<script>
+					function cambia_de_pagina1_3(){
+						  setTimeout("location.href='../index.html';",50);
+						}
+				</script>
+				<button style="border-color: #fff; border-radius: 10px; font-size: medium; padding:5px; margin-bottom:5px; background-color: transparent; color: #fff;" type="submit" onclick="javascript:cambia_de_pagina1_3();">
+						<i class="fa-solid fa-home"></i>
+				</button>
+			</div>
+		<!--End Contenedor Botones-->
+	</div>
+
+      <div class="contenedor">
+
+
+		    <!--loading-->
+			<div id="contenedor_carga">
+				<div id="carga"></div>
+			</div>
+		
+		
+			<script>
+				window.onload=function()
+				{
+					var contenedor=document.getElementById('contenedor_carga');
+					contenedor.style.visibility='hidden';
+					contenedor.style.opacity='.1';
+				}
+			</script>
+		<!--End Loading-->
+
+			
+		<!--Tabla-->
+			<div class="row">
+			  <div class="table-responsive">
+				
+				<table class="table table-hover table-sm" id="datatable">
+
+
+					<thead>
+						<tr>
+							<th class="title-tabla" scope="col" width="5">Clave</th>&nbsp;&nbsp;
+							<th class="title-tabla" scope="col">Área</th>
+							<th class="title-tabla" scope="col">Nombre</th>
+							<th class="title-tabla" scope="col">Teléfono</th>
+							<th class="title-tabla" scope="col">Correo electónico</th>
+							<th class="title-tabla" scope="col">Ubicación</th>
+						</tr>
+					</thead>
+				  	
+					<tbody>
+						
+						<tr>
+							<td><div class='Clave-4'>Uni. Gen.</button>
+							<td>Unidad Especializada de Género</td>
+							<td></td>
+							<td>55 5242 5100 Ext. 4974 y 4970</td>
+							<td></td>
+							<td>Arcos de Belén 79, piso 8, colonia Centro, alcaldía Cuauhtémoc, C.P. 06600, Ciudad de México</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-3'>Secue. Extor.</button>
+							<td>Director de Manejo de Crisis y Negociación</td>
+							<td>Mtro. Alfredo Almora García</td>
+							<td>55 5242 5100 Ext. 4524<div class="solo-mandos">(Solo Coordinadores y Estructura)</div></td>
+							<td>aalmora2003@yahoo.es</td>
+							<td>Liverpool 136, piso 1, Colonia Juárez, Alcaldía  Cuauhtémoc C.P. 06600, Ciudad de México</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-3'>Secue. Extor.</button>
+							<td>Subdirector de Atención a Víctimas de Secuestro</td>
+							<td>Ing.Eliezer Rosas Franco</td>
+							<td>55 5242 5100 Ext. 4538<div class="solo-mandos">(Solo Coordinadores y Estructura)</div></td>
+							<td></td>
+							<td>Liverpool 136, piso 1, Colonia Juárez, Alcaldía  Cuauhtémoc C.P. 06600, Ciudad de México</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-3'>Secue. Extor.</button>
+							<td>Subdirector de Atención a Víctimas de Extorsión</td>
+							<td>Lic. José Luis Rojas Rivera</td>
+							<td>55 5242 5100 Ext. 4533<div class="solo-mandos">(Solo Coordinadores y Estructura)</div></td>
+							<td>rojascalzada@hotmail.com</td>
+							<td>Liverpool 136, piso 1, Colonia Juárez, Alcaldía  Cuauhtémoc C.P. 06600, Ciudad de México</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-3'>Secue. Extor.</button>
+							<td>Línea Directa de Atención de la Dirección de Manejo de Crisis y Negociación</td>
+							<td></td>
+							<td>55 5242 5034</td>
+							<td></td>
+							<td>Liverpool 136, piso 1, Colonia Juárez, Alcaldía  Cuauhtémoc C.P. 06600, Ciudad de México</td>
+						</tr>
+							
+							
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>Dirección General de Seguridad Privada y Colaboración Interinstitucional</td>
+							<td>Lic. Ignacio Marmolejo Larios</td>
+							<td>55 5242 5100 Ext. 5258</td>
+							<td>imarmolejo@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>
+								
+						</tr>
+					
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>Dirección Ejecutiva de Seguridad Privada</td>
+							<td>Mtro. José Luis Morales de la Garza</td>
+							<td>55 5242 5100 Ext. 5631 y 5101</td>
+							<td>jlmorales@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>								
+						</tr>
+
+
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>Subdirección de Registro de Empresas y Personal</td>
+							<td>Mtro. Juan Javier Guizar Vargas</td>
+							<td>55 5242 5100 Ext. 5656</td>
+							<td>jjguizar@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>
+						</tr>
+
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>JUD de Control de Capacitadores y Evaluadores.</td>
+							<td>Lic. Silvia Noguez González</td>
+							<td>55 5242 5100 Ext. 5633</td>
+							<td>snoguez@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>Subdirección de Supervisión y Sanciones.</td>
+							<td>Lic. Sergio Arturo Rivera Escobar</td>
+							<td>55 5242 5100 Ext. 5662</td>
+							<td>arivera@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>
+						</tr>
+
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>JUD de Coordinación y Seguimiento a Requerimientos Institucionales.</td>
+							<td>Dra. Concepción Robles Castillo</td>
+							<td>55 5242 5100 Ext. 5267 y 5299</td>
+							<td>crobles@ssc.cdmx.gob.mx</td>
+							<td>Ermita 5, piso 3, colonia Narvarte Poniente, alcaldía Benito Juárez, C.P. 02030</td>
+						</tr>
+
+						<tr>
+							<td><div class='Clave-1'>Seg. Priv.</div></td>
+							<td>Encargado de Sistemas y Cómputo.</td>
+							<td>C. Gustavo Rodríguez García</td>
+							<td>55 5242 5100 Ext. 5661</td>
+							<td>grodriguezg@ssc.cdmx.gob.mx</td>
+							<td>Arcos de Belén 79, piso 9, colonia Centro, alcaldía Cuauhtémoc, C.P. 06000, Ciudad de México</td>
+						</tr>
+
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 1 Norte (GAM, VCA e IZT)</td>
+							<td>Subofl. Islas Farfan Aaron Israel</td>
+							<td>55 1093 9151</td>
+							<td></td>
+							<td>Gustavo A. Madero, Venustiano Carranza e Iztacalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 2 Centro (CUH)</td>
+							<td>Pol. 1° Ruiz Flores Teresa Viridiana</td>
+							<td>55 3402 2610</td>
+							<td></td>
+							<td>Cuauhtémoc</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 3 Oriente (IZP, TLH, MIL y XOC)</td>
+							<td>Ofl. Mendoza Meza Manuel </td>
+							<td>55 4614 6153</td>
+							<td></td>
+							<td>Iztapalapa, Tláhuac, Milpa Alta y Xochimilco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 4 Sur (BJU, COY, TLP y MAC)</td>
+							<td>Pol. 1° Valente Ramirez Juan</td>
+							<td>56 1538 1458</td>
+							<td></td>
+							<td>Benito Juárez, Coyoacán, Tlalpan y Magdalena Contreras</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 5 Poniente (MIH, AOB, CUJ y AZC)</td>
+							<td>Pol. 1° Velazquez Dominguez Ruben Omar </td>
+							<td>55 2705 6011</td>
+							<td></td>
+							<td>Miguel Hidalgo, Álvaro Obregón, Cuajimalpa y Azcapotzalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 6 (Infracciones)</td>
+							<td>Pol. 1° Doroteo Ramirez Maria Francisca</td>
+							<td>55 4994 5721</td>
+							<td></td>
+							<td>CDMX</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 7 Grúas</td>
+							<td>Subofl. Hernandez Salazar Yanet</td>
+							<td>55 7925 0735</td>
+							<td></td>
+							<td>CDMX</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Alfa Zona 8 Inmovilizadores (CUH, BJU y MIH)</td>
+							<td>Pol. 1° Cruz Gonzalez Valeria</td>
+							<td>55 3345 6121</td>
+							<td></td>
+							<td>Cuauhtémoc, Benito Juárez y Miguel Hidalgo</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 1 (GAM)</td>
+							<td>Pol. 2° 755891 Antonio Pascual Pedro (Indicativo RAYO 1-2)</td>
+							<td>55 3443 0488</td>
+							<td></td>
+							<td>Gustavo A. Madero</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 1 (VCA)</td>
+							<td>Pol. 2° 817055 Navarro Canseco Marcos (Indicativo RAYO 1-3)</td>
+							<td>55 6000 3708</td>
+							<td></td>
+							<td>Venustiano Carranza</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 1 (IZC)</td>
+							<td>Pol. 2° 927037 Hernández Tello David  (Indicativo RAYO 1-4)</td>
+							<td>55 3976 2358</td>
+							<td></td>
+							<td>Iztacalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 2 (CUH Perímetro ""A"")</td>
+							<td>Pol. 2° 1016570 Hernandez Macedonio Jose Alfredo (Indicativo RAYO 2-2)</td>
+							<td>55 7659 8193</td>
+							<td></td>
+							<td>Cuauhtémoc Perímetro ""A""</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 2 (CUH Perímetro ""B"")</td>
+							<td>Pol. 2° 818134 Espinoza Ruiz Samuel (Indicativo RAYO 2-3)</td>
+							<td>56 1013 3725</td>
+							<td></td>
+							<td>Cuauhtémoc Perímetro ""B""</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 3 (TLH)</td>
+							<td>Pol. 1° 907845 Ríos Hernández Armando Daniel  (Indicativo RAYO 3-2)</td>
+							<td>55 5503 0243</td>
+							<td></td>
+							<td>Tláhuac</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 3 (XOC)</td>
+							<td>Pol. 2° 905246 Saenz Vargas Juan Luis (Indicativo RAYO 3-3)</td>
+							<td>55 6082 2076</td>
+							<td></td>
+							<td>Xochimilco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 3 (MIL)</td>
+							<td>Pol. 1° 829404 García Mejia Irene (Indicativo RAYO 3-4)</td>
+							<td>55 1405 4890</td>
+							<td></td>
+							<td>Milpa Alta</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 3 (IZP)</td>
+							<td>Suboficial 764126 Garcia Arredondo Erik (Indicativo RAYO 3-5)</td>
+							<td>55 1900 1323</td>
+							<td></td>
+							<td>Iztapalapa</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 4 (BJU)</td>
+							<td>Pol. 1° 857149 Contreras Gutierrez David Christian (Indicativo RAYO 4-2)</td>
+							<td>55 7152 0998</td>
+							<td></td>
+							<td>Benito Juárez</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 4 (COY)</td>
+							<td>Pol. 2° 915434 De Jesús López Jonathan Fernando (Indicativo RAYO 4-3)</td>
+							<td>55 8601 6712</td>
+							<td></td>
+							<td>Coyoacán</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 4 (TLP)</td>
+							<td>Pol. 1° 804626 Alonso Garcia Manuel (Indicativo RAYO 4-4)</td>
+							<td>55 4984 4377</td>
+							<td></td>
+							<td>Tlalpan</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 4 (MAC)</td>
+							<td>Suboficial 757571 Morales Cruz Araceli (Indicativo RAYO 4-5)</td>
+							<td>55 6564 0133</td>
+							<td></td>
+							<td>Magdalena Contreras</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 5 (MIH)</td>
+							<td>Pol. 2°  760132 Ramos Morales José Antonio (Indicativo RAYO 5-2)</td>
+							<td>55 7907 8207</td>
+							<td></td>
+							<td>Miguel Hidalgo</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 5 (AZC)</td>
+							<td>Suboficial 837694 Gómez Guzmán Victor Manuel (Indicativo RAYO 5-3)</td>
+							<td>56 2709 8624</td>
+							<td></td>
+							<td>Azcapotzalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 5 (AOB)</td>
+							<td>Pol. 2°  870179 Hernández Sánchez Carlos Alberto (Indicativo RAYO 5-4)</td>
+							<td>55 5337 4221</td>
+							<td></td>
+							<td>Álvaro Obregón</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Operación Zona 5 (CUJ)</td>
+							<td>Pol. 1° 869359 García Benicio Fernando (Indicativo RAYO 5-5)</td>
+							<td>55 8548 7915</td>
+							<td></td>
+							<td>Cuajimalpa</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de la Dirección de Infracciones con Dispositivos Móviles (Zona 1 Norte)</td>
+							<td>Pol. 2°  803955 Alvirez Ramirez Jose Alfredo (Indicativo RAYO 6-3)</td>
+							<td>55 4270 0746</td>
+							<td></td>
+							<td>Gustavo A. Madero, Venustiano Carranza e Iztacalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de la Dirección de Infracciones con Dispositivos Móviles (Zona 2 Centro)</td>
+							<td>Pol. 2°  952470 Sánchez Sanchez Lilian (Indicativo RAYO 6-4)</td>
+							<td>55 7903 4205</td>
+							<td></td>
+							<td>Cuauhtémoc</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de la Dirección de Infracciones con Dispositivos Móviles (Zona 3 Oriente)</td>
+							<td>Pol. 2°  885260 Arellano Dávila Rubén  (Indicativo RAYO 6-5)</td>
+							<td>55 4833 5375</td>
+							<td></td>
+							<td>Iztapalapa, Tláhuac, Milpa Alta y Xochimilco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de la Dirección de Infracciones con Dispositivos Móviles (Zona 4 Sur)</td>
+							<td>Pol. 2°  882986 Molotla Jardínez de Balbuena Daniel (Indicativo RAYO 6-6)</td>
+							<td>55 2312 5314</td>
+							<td></td>
+							<td>Benito Juárez, Coyoacán, Tlalpan y Magdalena Contreras</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de la Dirección de Infracciones con Dispositivos Móviles (Zona 5 Poniente)</td>
+							<td>Pol. 1°  718278 Montes de Oca Hernández Rodolfo  (Indicativo RAYO 6-7)</td>
+							<td>55 3007 9463</td>
+							<td></td>
+							<td>Miguel Hidalgo, Álvaro Obregón, Cuajimalpa y Azcapotzalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Gruas  Operación Vial (Zona 1)</td>
+							<td>Pol. 2° 821683 Abonza Alvarez Antonio (Indicativo RAYO 7-2)</td>
+							<td>55 2270 9778</td>
+							<td></td>
+							<td>Gustavo A. Madero, Venustiano Carranza e Iztacalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Gruas Operación Vial (Zona 2 Y 5)</td>
+							<td>Subinspector 909940 López Vázquez José Luis  (Indicativo RAYO 7-3)</td>
+							<td>55 7204 8847</td>
+							<td></td>
+							<td>Cuauhtémoc, Miguel Hidalgo, Álvaro Obregón, Cuajimalpa y Azcapotzalco</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>JUD de Gruas Operación Vial (Zona 3 Y 4)</td>
+							<td>Pol. 2°  907054 Pacheco Alvarado Juan Carlos (Indicativo RAYO 7-4)</td>
+							<td>55 2436 2190</td>
+							<td></td>
+							<td>Iztapalapa, Tláhuac, Milpa Alta, Xochimilco, Benito Juárez, Coyoacán, Tlalpan y Magdalena Contreras</td>
+						</tr>
+						
+						<tr>
+							<td><div class='Clave-2'>Vial. Trán.</div></td>
+							<td>Subdirección del Sistema Adaptativo para el Control de Tránsito</td>
+							<td>Subinspector Calderón Valladares Rafael (Indicativo AMBAR 1-1)</td>
+							<td>55 3589 8081</td>
+							<td></td>
+							<td>CDMX</td>
+						</tr>
+						
+						
+							
+
+				  </tbody>
+				</table>
+
+
+			  </div>
+			</div>
+
+		<!--Tabla-->
+
+	  </div>
+	</div>
+	  
+	  
+
+
+
+	<script src="../js/app.js"></script>
+	<script src="../js/Directorio.js"></script>
+
+
+</body>
+</html>
